@@ -7,11 +7,11 @@ Vagrant.configure("2") do |config|
     puppet.module_path = "modules"
   end
 
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "precise32"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   # Forward guest port 80 to host port 8888 and name mapping
   config.vm.network :forwarded_port, guest: 80, host: 8888
 
-  config.vm.synced_folder "webroot/", "/vagrant/webroot/", :owner => "www-data"
+  config.vm.synced_folder "webroot/", "/vagrant/webroot/", :owner => "www-data", create: true
 end
