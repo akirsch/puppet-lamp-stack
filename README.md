@@ -15,8 +15,7 @@ Credit must be given where credit is due. Most of this work was made possible by
 ## Instructions
 0. Insure Vagrant and Virutal Box are installed.
 1. Clone this repository.
-2. Create directory "webroot" in the root directory of the clone. This will act as your root web folder.
-3. Open up terminal, change directory to the git repo root, and start the vagrant box.
+2. Open up terminal, change directory to the git repo root, and start the vagrant box.
 
         $ vagrant up
 
